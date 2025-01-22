@@ -1,3 +1,7 @@
 imgs:hover {
     border-color: yellow;
 }
+
+body {
+    background-color: lightblue;
+}
