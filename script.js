@@ -1,3 +1,8 @@
+const getUserName = prompt('What is your name?'); 
+
+
+
+
 const getUserChoice = (userInput) => {
     userInput = userInput.toLowerCase();
     if (
