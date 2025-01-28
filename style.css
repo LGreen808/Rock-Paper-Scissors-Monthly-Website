@@ -1,6 +1,14 @@
-imgs:hover {
-    border-color: yellow;
+img:hover {
+    background-color: yellow;
 }
+
+button {
+    background-color: lightblue;
+    border-color: lightblue;
+    box-shadow: 0px, 0px, 0px, transparent;
+    border-style: solid;
+}
+
 
 body {
     background-color: lightblue;
