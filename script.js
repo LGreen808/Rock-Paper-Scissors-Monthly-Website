@@ -1,4 +1,6 @@
-const getUserName = prompt('What is your name?'); 
+//Asking the User Name and printing a welcome sentence on the console//
+const userName = prompt('What is your name?'); 
+document.getElementById('userGreeting').innerText = `Hello! ${userName}, nice to meet you, I hope your excited to play!. Please pick from either Rock, Paper, or Scissors below!.`;
 
 
 
