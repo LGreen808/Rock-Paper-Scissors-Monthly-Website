@@ -1,16 +1,17 @@
 //Asking the User Name and printing a welcome sentence on the console//
 const userName = prompt('What is your name?'); 
+document.getElementById('userName').innerText = userName
 document.getElementById('userGreeting').innerText = `Hello! ${userName}, nice to meet you, I hope your excited to play!. Please pick from either Rock, Paper, or Scissors below!.`;
 
 
 const getUserChoice = (userInput) => {
     userInput = userInput.toLowerCase();
-    if (
-      userInput === "Rock" ||
+    if (userInput === "Rock") 
       userInput === "Paper" ||
       userInput === "Scissors" ||
-    ) {
-    return ( )
+    )
+    
+    {return ( )
     } else {
       console.log("Not a valid input!");
     }
