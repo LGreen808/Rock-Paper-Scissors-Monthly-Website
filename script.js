@@ -19,7 +19,10 @@ const getUserChoice = (userInput) => {
     return ["Rock", "Paper", "Scissors"][Math.floor(Math.random() * 3)];
   };
   
-  const determineWinner = (userChoice, computerChoice) => {
+ 
+ 
+ 
+    const determineWinner = (userChoice, computerChoice) => {
     } if (userChoice === "rock") {
       if (computerChoice === "paper") {
         return "The computer won!";
