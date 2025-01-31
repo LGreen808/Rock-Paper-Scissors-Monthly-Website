@@ -9,8 +9,11 @@ const getComputerChoice = () => {
  if  (randomNumber === '1') {
    return "rock"
  } else (randomNumber === '2') 
-   return "paper"
-};
+   return "paper" 
+ } else (randomNumber === '3')
+    return "scissors"
+ }
+ };
 
 //This part of my Java Script determines who wins between the user and the computer based on what the choices are//
 const determineWinner = (userChoice, computerChoice) => {
