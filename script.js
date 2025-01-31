@@ -5,15 +5,16 @@ document.getElementById('userGreeting').innerText = `Hello! ${userName}, nice to
 
 //This part of my Java Script loads what my computer chooses in the game//
 const getComputerChoice = () => {
- randomNumber = Math.floor(Math.random() * 3);
- if  (randomNumber === '1') {
-   return "rock"
- } else (randomNumber === '2') 
-   return "paper" 
- } else (randomNumber === '3')
-    return "scissors"
- }
- };
+  randomNumber = Math.floor(Math.random() * 3);
+  if (randomNumber === '1') {
+    return "rock"
+  } else if (randomNumber === '2'){
+    return "paper"
+  }
+else {
+  return "scissors"
+}
+};
 
 //This part of my Java Script determines who wins between the user and the computer based on what the choices are//
 const determineWinner = (userChoice, computerChoice) => {
