@@ -8,6 +8,7 @@ const getComputerChoice = () => {
   randomNumber = Math.floor(Math.random() * 3);
   if (randomNumber === '1') {
     return "rock"
+    getComputerChoice.src = "imgs/Rock.png"
   } else if (randomNumber === '2'){
     return "paper"
   }
@@ -20,21 +21,18 @@ else {
 const determineWinner = (userChoice, computerChoice) => {
   if (userChoice === "rock") {
     if (computerChoice === "paper") {
-      computerChoice.src= "imgs/Paper.webp"
       resultDisplay.innerText = "The computer won!";
     } else {
       return "You won!";
     }
   } else if (userChoice === "paper") {
     if (computerChoice === "rock") {
-      computerChoice.src= "imgs/Rock.png"
       return "You won!";
     } else {
       return "The computer won!";
     }
   } else if (userChoice === "paper") {
     if (computerChoice === "scissors") {
-      computerChoice.src= "imgs/Scissors.png"
       return "The computer won!";
     } else {
       return "You won!";
