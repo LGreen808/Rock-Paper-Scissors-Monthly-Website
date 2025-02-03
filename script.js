@@ -45,7 +45,15 @@ const determineWinner = (userChoice, computerChoice) => {
 const playGame = (userChoice) => {
   console.log(userChoice);
   const computerChoice = getComputerChoice();
-  alert("You threw " + userChoice);
+  // alert("You threw " + userChoice);
+  const myChoice = document.getElementById("userChoice");
+  if (userChoice === 'rock'){
+    myChoice.src = "imgs/Rock.png"
+  } if else (userChoice === 'paper') {
+    myChoice.src = "imgs/Paper.webp"
+  } else {
+    myChoice.src = "imgs/Scissors.png"
+  }
   alert("The computer picked " + computerChoice);
   alert(determineWinner(userChoice, computerChoice));
 };
