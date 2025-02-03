@@ -3,6 +3,7 @@ const userName = prompt('What is your name?');
 let resultDisplay = document.getElementById('result')
 document.getElementById('userGreeting').innerText = `Hello! ${userName}, nice to meet you, I hope your excited to play!. Please pick from either Rock, Paper, or Scissors below!.`;
 
+
 //This part of my Java Script loads what my computer chooses in the game//
 const getComputerChoice = () => {
   randomNumber = Math.floor(Math.random() * 3);
@@ -23,7 +24,7 @@ const determineWinner = (userChoice, computerChoice) => {
       resultDisplay.innerText = "The computer won!";
     } else {
       return "You won!";
-    }
+    } 
   } else if (userChoice === "paper") {
     if (computerChoice === "rock") {
       return "You won!";
@@ -36,7 +37,7 @@ const determineWinner = (userChoice, computerChoice) => {
     } else {
       return "You won!";
     }
-  } else if (userChoice === computerChoice) {
+  } else {
     return "It's a tie!";
   }
 }
