@@ -28,6 +28,11 @@ h4 {
 }
 
 #userChoice {
-    width: 550px;
-    height: 550px;
+    width: 400px;
+    height: 400px;
+}
+
+#computerChoice {
+    width: 400px;
+    height: 400px;
 }

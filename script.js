@@ -8,7 +8,6 @@ const getComputerChoice = () => {
   randomNumber = Math.floor(Math.random() * 3);
   if (randomNumber === '1') {
     return "rock"
-    getComputerChoice.src = "imgs/Rock.png"
   } else if (randomNumber === '2'){
     return "paper"
   }
@@ -55,6 +54,18 @@ const playGame = (userChoice) => {
  } else {
     myChoice.src = "imgs/Scissors.png"
   }
+  //This is where my computer choice should log to the screen with either the image of rock, paper, or scissors//
+  console.log(computerChoice);
+  const pickComputer = computerChoice
+     if(computerChoice === 'rock') {
+      pickComputer.src = "imgs/Rock.png"
+     } else if (computerChoice === 'paper') {
+      pickComputer.src = "imgs/Paper.webp"
+     } else {
+      pickComputer.src= "imgs/Scissors.png"
+     }
+  //This is where the code will tell the user and put on the screen what the computer choice was//
   alert("The computer picked " + computerChoice);
+  //This is where the code will put on the screen who won with the computer vs. the user//
   alert(determineWinner(userChoice, computerChoice));
 };
