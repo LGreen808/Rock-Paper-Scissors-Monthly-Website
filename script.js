@@ -49,9 +49,9 @@ const playGame = (userChoice) => {
   const myChoice = document.getElementById("userChoice");
   if (userChoice === 'rock'){
     myChoice.src = "imgs/Rock.png"
-  } if else (userChoice === 'paper') {
+  } else if (userChoice === 'paper') {
     myChoice.src = "imgs/Paper.webp"
-  } else {
+ } else {
     myChoice.src = "imgs/Scissors.png"
   }
   alert("The computer picked " + computerChoice);
