@@ -55,9 +55,13 @@ const playGame = (userChoice) => {
     myChoice.src = "imgs/Scissors.png"
   }
   const computerChoice = getComputerChoice();
-  
-  if (computerChoice === 'rock'){
 
+  if (computerChoice === 'rock'){
+    computerChoice.src="imgs/Rock.png"
+  } else if (computerChoice === 'paper') {
+    computerChoice.src="imgs/Paper.webp"
+  } else {
+    computerChoice.src="imgs/Scissors.png"
   }
 
 
