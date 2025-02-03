@@ -26,3 +26,8 @@ h2 {
 h4 {
     font-family:'Courier New', Courier, monospace;
 }
+
+#userChoice {
+    width: 20px;
+    height: 20px;
+}
