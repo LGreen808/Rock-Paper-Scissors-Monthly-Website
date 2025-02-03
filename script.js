@@ -43,8 +43,9 @@ const determineWinner = (userChoice, computerChoice) => {
 
 //This code plays the game (Rock, Paper, Scissors) between the user and the computer//
 const playGame = (userChoice) => {
+  console.log(userChoice);
   const computerChoice = getComputerChoice();
-  console.log("You threw " + userChoice);
-  console.log("The computer picked " + computerChoice);
-  console.log(determineWinner(userChoice, computerChoice));
+  alert("You threw " + userChoice);
+  alert("The computer picked " + computerChoice);
+  alert(determineWinner(userChoice, computerChoice));
 };
