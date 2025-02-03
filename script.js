@@ -20,18 +20,21 @@ else {
 const determineWinner = (userChoice, computerChoice) => {
   if (userChoice === "rock") {
     if (computerChoice === "paper") {
+      computerChoice.src= "imgs/Paper.webp"
       resultDisplay.innerText = "The computer won!";
     } else {
       return "You won!";
     }
   } else if (userChoice === "paper") {
     if (computerChoice === "rock") {
+      computerChoice.src= "imgs/Rock.png"
       return "You won!";
     } else {
       return "The computer won!";
     }
-  } else if (userChoice === "scissors") {
-    if (computerChoice === "rock") {
+  } else if (userChoice === "paper") {
+    if (computerChoice === "scissors") {
+      computerChoice.src= "imgs/Scissors.png"
       return "The computer won!";
     } else {
       return "You won!";
@@ -54,17 +57,6 @@ const playGame = (userChoice) => {
  } else {
     myChoice.src = "imgs/Scissors.png"
   }
-  const computerChoice = getComputerChoice();
-
-  if (computerChoice === 'rock'){
-    computerChoice.src="imgs/Rock.png"
-  } else if (computerChoice === 'paper') {
-    computerChoice.src="imgs/Paper.webp"
-  } else {
-    computerChoice.src="imgs/Scissors.png"
-  }
-
-
   alert("The computer picked " + computerChoice);
   alert(determineWinner(userChoice, computerChoice));
 };
