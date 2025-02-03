@@ -44,7 +44,6 @@ const determineWinner = (userChoice, computerChoice) => {
 //This code plays the game (Rock, Paper, Scissors) between the user and the computer//
 const playGame = (userChoice) => {
   console.log(userChoice);
-  const computerChoice = getComputerChoice();
   // alert("You threw " + userChoice);
   //This is where my userChoice should log to the screen as the image of rock, paper, or scissors//
   const myChoice = document.getElementById("userChoice");
@@ -55,6 +54,13 @@ const playGame = (userChoice) => {
  } else {
     myChoice.src = "imgs/Scissors.png"
   }
+  const computerChoice = getComputerChoice();
+  
+  if (computerChoice === 'rock'){
+
+  }
+
+
   alert("The computer picked " + computerChoice);
   alert(determineWinner(userChoice, computerChoice));
 };
