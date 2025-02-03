@@ -46,6 +46,7 @@ const playGame = (userChoice) => {
   console.log(userChoice);
   const computerChoice = getComputerChoice();
   // alert("You threw " + userChoice);
+  //This is where my userChoice should log to the screen as the image of rock, paper, or scissors//
   const myChoice = document.getElementById("userChoice");
   if (userChoice === 'rock'){
     myChoice.src = "imgs/Rock.png"
